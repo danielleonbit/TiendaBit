@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Red+Hat+Display:wght@400;500&display=swap');
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+/*nav*/
+.nav-home{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background: rgb(255 255 255 / 75%);
+    
+}
+.nav-home .img-nav{
+    max-width: 300px;
+    padding-left: 2rem;
+    padding-top: 1rem;
+
+}
+.nav-home .list-menu{
+    display: flex;
+    padding-left: 0;
+    
+    list-style: none;
+    justify-content: space-between;
+    padding-right: 2rem;
+}
+.nav-home .list-menu .link-menu{
+ color: rgba(0, 0,0,1);
+ margin-left: 1rem;
+ font-family: 'Red Hat Display', sans-serif;
+ font-size: 1.5rem;
+ text-decoration: none;
+}
+/*footer*/
+.footer{
+    display: flex;
+    justify-content: center;
+ background-color: black;   
+}
+.footer .text-footer{
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;  
+    
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 900px;
+}
+.sections{
+    display: flex;
+    position: relative;
+}
+.home{
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('../images/image-home.jpg') center center fixed;
+}
+
+.home .text-home{
+    font-family: 'Boogaloo', cursive;
+    font-size: 10rem;
+    position: relative;
+    z-index: 9;
+    color:white;
+    margin-bottom: 0;
+}
+.home .text-home-2{
+    font-family: 'Boogaloo', cursive;
+    font-size: 2.5rem;
+    position: relative;
+    z-index: 9;
+    color:white;
+    margin-top: 0;
+}
+.aboutus,.contact{
+    min-height: 60vh;
+    justify-content: flex-start;
+    margin-top: 5rem;
+
+}
+.text-title{
+    color: rgb(60, 60, 60);
+    font-family: 'Red Hat Display', sans-serif; 
+    font-size: 3rem;
+}  
+.text-description{
+    color: rgb(60, 60, 60);
+    font-family: 'Red Hat Display', sans-serif; 
+    margin-bottom: 0;
+}  
+.aboutus .content-aboutus{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.aboutus .content-aboutus div{
+    flex:45%;
+}
+.aboutus .content-aboutus div.div-text{
+    padding: 0 1.5rem;
+}
+.aboutus .content-aboutus .img-aboutus{
+    max-width: 100%;
+}
+.contact .content-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.contact .content-contact div{
+    flex:45%;
+}
+.aboutus .content-aboutus div.div-text{
+    padding: 0 1.5rem;
+}
+.aboutus .content-aboutus div.div-form{
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.aboutus .content-aboutus div.div-form .div-form-input{
+    flex:100%;
+}
+.form-input{
+    width: 80%;
+    height: 45px;
+    border-radius: 0;
+    border:none;
+    border-bottom: 1px solid rgb(60, 60, 60);
+    margin-bottom: 1rem;
+    font-family: 'Red Hat Display', sans-serif; 
+}
+.form-input:focus{
+    border-bottom: 2px solid rgb(60, 60, 60);
+    outline: none;
+}
+.form-textarea{
+    width: 80%;
+    border-radius: 0;
+    border:none;
+    border-bottom: 1px solid rgb(60, 60, 60);
+    min-height: 250px;
+    font-family: 'Red Hat Display', sans-serif; 
+}
+.form-textarea:focus{
+    border-bottom: 2px solid rgb(60, 60, 60);
+    outline: none;
+}
+::placeholder{
+    font-size: 1.2rem;
+    font-family: 'Red Hat Display', sans-serif; 
+}
+
+
