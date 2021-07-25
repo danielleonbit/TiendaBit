@@ -67,6 +67,7 @@ html,body{
     align-items: center;
     flex-direction: column;
     background: url('../images/image-home.jpg') center center fixed;
+    background-repeat: no-repeat;
     line-height: 1;
 }
 
