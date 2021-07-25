@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css?b">
-    <title>Store Games</title>
+    <link rel="stylesheet" href="css/styles.css?ccc">
+    <title>Press Start - Tienda de video Juegos</title>
+    <style>
 
+        @font-face {
+            font-family: 'evogriaregular';
+            src: url('fonts/evogria-webfont.woff2') format('woff2'),
+                url('fonts/evogria-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+    </style>
 </head>
 
 <body>
     <nav class="nav-home">
-        <a href="#home"><img src="./images/logobn.png" class="img-nav" alt=""></a>   
+        <a href="#home"><img src="./images/logo.png" class="img-nav" alt=""></a>   
            <ul class="list-menu">
                <li ><a class="link-menu" href="#Inicio">Inicio</a></li>
-               <li ><a class="link-menu" href="#Sobre-nosotros">Sobre nosotros</a> </li>
+               <li ><a class="link-menu" href="#Nosotros">Conocenos</a> </li>
                <li ><a class="link-menu" href="#contacto">Contacto</a> </li>
            </ul> 
     </nav>
@@ -22,7 +32,7 @@
         <h2 class="text-home">Press Start</h2>
         <h3 class="text-home-2">Tienda de videojuegos</h3>
     </section>
-    <section id="Sobre-nosotros"class="sections aboutus">
+    <section id="Nosotros"class="sections aboutus">
         <div class="container">
             <div class="content-aboutus">
                 <div class="div-text">
@@ -41,15 +51,18 @@
         <div class="container">
             <div class="content-contact">
                 <div class="div-form">
-                    <form action="">
+                    <form id="FormContact" onsubmit="event.preventDefault(); validateForm();">
                         <div class="div-form-input">
                             <input id="form-names" type="text" class="form-input" placeholder="Nombres">
                         </div>
                         <div class="div-form-input">
-                            <input id="form-names" type="email" class="form-input" placeholder="Email">
+                            <input id="form-email" type="email" class="form-input" placeholder="Email">
                         </div>
                         <div class="div-form-input">
-                            <textarea id="" class="form-textarea" placeholder="Mensaje"></textarea>
+                            <textarea id="form-message" class="form-textarea" placeholder="Mensaje"></textarea>
+                        </div>
+                        <div class="div-form-input">
+                            <input type="submit" class="btn-form" value="Enviar">
                         </div>
                         
                     </form>
@@ -58,14 +71,14 @@
                 
                 <div class="div-text">
                     <h3 class="text-title">Contacto</h3>
-                    <p class="text-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    <p class="text-description">Si estas interesado en algun producto o servicio no dudes en enviarnos un mensaje.</p>
                 </div>
             </div>
         </div>
     </section>
     
-
-    <script src="js/scripts.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/scripts.js?ccc"></script>
     
 </body>
 <footer class="footer">

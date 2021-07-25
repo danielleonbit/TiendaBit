@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Red+Hat+Display:wght@400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Red+Hat+Display:wght@300;400;700&display=swap');
 html,body{
     margin: 0;
     padding: 0;
@@ -66,18 +67,19 @@ html,body{
     align-items: center;
     flex-direction: column;
     background: url('../images/image-home.jpg') center center fixed;
+    line-height: 1;
 }
 
 .home .text-home{
-    font-family: 'Boogaloo', cursive;
-    font-size: 10rem;
+    font-family: 'evogriaregular', cursive;
+    font-size: 7rem;
     position: relative;
     z-index: 9;
     color:white;
     margin-bottom: 0;
 }
 .home .text-home-2{
-    font-family: 'Boogaloo', cursive;
+    font-family: 'Lato', cursive;
     font-size: 2.5rem;
     position: relative;
     z-index: 9;
@@ -87,7 +89,7 @@ html,body{
 .aboutus,.contact{
     min-height: 60vh;
     justify-content: flex-start;
-    margin-top: 5rem;
+    padding-top: 6rem;
 
 }
 .text-title{
@@ -161,6 +163,21 @@ html,body{
 .form-textarea:focus{
     border-bottom: 2px solid rgb(60, 60, 60);
     outline: none;
+}
+.btn-form{
+    border: 1px solid black;
+    background: #fff;
+    padding: .5rem 1rem;
+    margin: 1rem 1rem 1rem 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.btn-form:hover{
+    border: 1px solid white;
+    background: black;
+    color: white;
+  cursor: pointer;
 }
 ::placeholder{
     font-size: 1.2rem;
